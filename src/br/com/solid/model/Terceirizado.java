@@ -1,21 +1,23 @@
 package br.com.solid.model;
 
-import java.math.BigDecimal;
 
-public class Terceirizado extends Funcionario {
+public class Terceirizado {
 	
 	private String empresa;
+	private DadosPessoais dadosPessoais;
+	
+	public Terceirizado(String empresa, DadosPessoais dadosPessoais) {
+		super();
+		this.empresa = empresa;
+		this.dadosPessoais = dadosPessoais;
+	}
 
-	public Terceirizado(String nome, String cpf, Cargo cargo, BigDecimal salario) {
-		super(nome, cpf, cargo, salario);
+	public DadosPessoais getDadosPessoais() {
+		return dadosPessoais;
 	}
 
 	public String getEmpresa() {
 		return empresa;
-	}
-
-	public void setEmpresa(String empresa) {
-		this.empresa = empresa;
 	}
 
 }
