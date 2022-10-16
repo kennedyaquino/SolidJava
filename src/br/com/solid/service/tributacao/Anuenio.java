@@ -25,10 +25,4 @@ public class Anuenio implements Reajuste {
 		return data;
 	}
 
-	@Override
-	public BigDecimal valorImpostoDeReanda() {
-		// TODO Auto-generated method stub
-		return BigDecimal.ZERO;
-	}
-
 }
